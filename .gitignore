@@ -4,6 +4,10 @@ bin-debug/
 bin-release/
 [Oo]bj/ # FlashDevelop obj
 [Bb]in/ # FlashDevelop bin
+[Dd]ebug
+[Rr]elease
+bin/[Dd]ebug
+bin/[Rr]elease
 
 # Other files and folders
 .settings/
