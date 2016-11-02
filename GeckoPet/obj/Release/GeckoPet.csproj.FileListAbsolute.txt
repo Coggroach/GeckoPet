@@ -1,0 +1,5 @@
+E:\Development\C#\Projects\GeckoPet\GeckoPet\bin\Release\GeckoPet.exe.config
+E:\Development\C#\Projects\GeckoPet\GeckoPet\bin\Release\GeckoPet.exe
+E:\Development\C#\Projects\GeckoPet\GeckoPet\bin\Release\GeckoPet.pdb
+E:\Development\C#\Projects\GeckoPet\GeckoPet\obj\Release\GeckoPet.exe
+E:\Development\C#\Projects\GeckoPet\GeckoPet\obj\Release\GeckoPet.pdb

@@ -18,11 +18,12 @@ namespace GeckoPet
                 return string.Empty;
             if (args.Length >= 1)
                 return string.Empty;
+            if (args.Length == 1)
+                return args[0];
 
             if (!args[0].Contains("?message=") && !string.IsNullOrEmpty(args[1]))
-            {
                 return args[0] + "?message=" + args[1];
-            }
+
             return args[0];
 #endif
         }
