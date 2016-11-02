@@ -8,22 +8,18 @@ namespace GeckoPet
     {
         private static string GetUrl(string[] args)
         {
-#if(DEBUG)
             if (args == null)
-                return string.Empty;
+                throw new ArgumentNullException(nameof(args));
+            if (args.Length == 0)
+                throw new ArgumentException(nameof(args));
+            if (args.Length == 1)
+                return args[0];
+#if (DEBUG)
             var message = args.Length == 2 ? args[1] : "GeckoPet";
             return $"http://localhost:8000/echo.php?message={message}";
 #else
-            if (args == null)
-                return string.Empty;
-            if (args.Length >= 1)
-                return string.Empty;
-            if (args.Length == 1)
-                return args[0];
-
             if (!args[0].Contains("?message=") && !string.IsNullOrEmpty(args[1]))
                 return args[0] + "?message=" + args[1];
-
             return args[0];
 #endif
         }
@@ -40,7 +36,6 @@ namespace GeckoPet
                         html = reader.ReadToEnd();
 
             Console.WriteLine(html);
-            Console.ReadLine();
         }
     }
 }
